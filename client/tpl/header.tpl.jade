@@ -1,0 +1,11 @@
+//
+   Created by timwissel on 28-06-15.
+
+.ui.inverted.menu
+    a.item
+        i.home.icon
+        span Home
+    if currentUser
+        a.item.right log out
+    else
+        a.item.right(href='/sign-in') log in
