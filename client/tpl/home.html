@@ -74,26 +74,25 @@
 
                                         {{#if currentUser}}
                                             <h3>Create an offer</h3>
-                                            {{# autoForm id='insertOffer' collection='Offers' type='insert' template='plain'}}
-                                                {{> afQuickField name='item' options='allowed'}}
-                                                {{> afQuickField name='amount'}}
-                                                {{> afQuickField name='pricePerItem'}}
-                                                {{> afQuickField name='buyingOrSelling'}}
-                                                {{> afQuickField name='info'}}
-                                            {{/autoForm}}
+                                            {{> quickForm id='insertOffer' collection='Offers' type='insert' template='bootstrap3'}}
                                         {{else}}
                                             <h3>You need to be signed in to create an offer.</h3>
                                         {{/if}}
 
+                                        <input id="search" data-bind="value: search" class="form-control" type="text" placeholder="Search items..."/>
+
                                         <h3>Latest offers</h3>
 
-                                        <table width="700" style="border: solid;">
+                                        <table class="table table-bordered" width="700">
                                             <thead>
-                                            <th>Item</th>
-                                            <th>Offer</th>
-                                            <th>Scape-2006 username</th>
-                                            <th>Time</th>
-                                            <th>Info</th>
+                                            <tr>
+                                                <th>Item</th>
+                                                <th>Offer</th>
+                                                <th>Scape-2006 username</th>
+                                                <th>Time</th>
+                                                <th>Info</th>
+                                                <th></th>
+                                            </tr>
                                             </thead>
                                             <tbody>
                                             {{#each offers}}

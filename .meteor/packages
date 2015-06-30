@@ -15,4 +15,7 @@ aldeed:simple-schema
 zimme:collection-timestampable
 accounts-password
 lbee:moment-helpers
-useraccounts:unstyled
+twbs:bootstrap
+useraccounts:bootstrap
+manuel:viewmodel
+manuel:viewmodel-explorer

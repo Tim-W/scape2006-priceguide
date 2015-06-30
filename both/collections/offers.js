@@ -7,9 +7,11 @@ Offers.attachBehaviour('timestampable');
 
 Offers.attachSchema(new SimpleSchema({
     item: {
+        label: 'Item name (e.g. Rune Axe)',
         type: String
     },
     amount: {
+        label: 'Amount in numbers (without suffixes like K or M)',
         type: Number
     },
     pricePerItem: {
